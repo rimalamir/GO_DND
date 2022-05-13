@@ -13,7 +13,7 @@ import (
 
 func main() {
 	rand.Seed(time.Now().UTC().UnixNano())
-	dice := flag.String("d", "d6", "The type of dice you roll. Format: dX where X is integer Default: ")
+	dice := flag.String("d", "d20", "The type of dice you roll. Format: dX where X is integer Default: ")
 	numRoll := flag.Int("n", 1, "The number of die to roll, default 1")
 	sum := flag.Bool("s", false, "Get the sum of all the dice rolls")
 	advantage := flag.Bool("adv", false, "Roll the dice with advantage")
